@@ -20,7 +20,7 @@
 title: djhills.dev
 email: david@djhills.dev
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog to share practical insights from everyday tech tinkering.
+  Thoughts and insights of a Python developer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://djhills.github.io"
 github_username:  DJHills
