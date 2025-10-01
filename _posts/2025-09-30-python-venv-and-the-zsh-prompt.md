@@ -73,5 +73,5 @@ david@nuc [~/dev]
 [16:45]:
 ```
 
-At this point I coupled the above with another function to auto-activate and auto-deactivate virtualenv as I switched directory, in order to automate the invocation of `activate` and `deactivate`.  More on that in another blog post.
+At this point I coupled the above with another function to auto-activate and auto-deactivate virtualenv as I switched directory, in order to automate the invocation of `activate` and `deactivate`, as detailed in [this post]({% post_url 2025-10-01-auto-activating-python-venv %}).
 
