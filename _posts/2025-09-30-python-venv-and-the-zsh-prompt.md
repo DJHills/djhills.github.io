@@ -22,9 +22,10 @@ My solution was to replace the default behaviour with a shell function to show a
 Not only does this keep the prompt more succinct, it also makes it much more obvious when the activated virtualenv is not as expected.  
 
 Behaviour is as follows:
-1. If `.venv` subdir is present in current dir or any parent dir, check that a virtualenv is active.  Append `(venv not activated)` to prompt if not.
+1. If `.venv` subdir is present in current dir or any parent dir:
+    1. Append `(venv not activated)` to prompt if no virtualenv is active.
+    1. Append `(unexpected venv is activated)` to prompt if content of `VIRTUAL_ENV` variable does not match current dir.
 1. If `.venv` subdir is not present in current dir or any parent dir, check that no virtualenv is active.  Append `(venv not deactivated)` to prompt if not.
-1. If `.venv` subdir is present in current dir or any parent dir, check that content of `VIRTUAL_ENV` variable matches.  Append `(unexpected venv is activated)` to prompt if not.
 
 The above was achieved with the below additions to my `.zshrc`:
 
